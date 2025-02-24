@@ -15,7 +15,7 @@ scene.add(ambientLight);
 
 // Load model
 const loader = new GLTFLoader();
-loader.load('/AprilTagTesting/dist/field.glb', (gltf) => {
+loader.load('/AprilTagTesting/field.glb', (gltf) => {
   scene.add(gltf.scene);
   gltf.scene.scale.set(0.01, 0.01, 0.01);
   gltf.scene.traverse((child) => {
