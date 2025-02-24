@@ -15,7 +15,7 @@ scene.add(ambientLight);
 
 // Load model
 const loader = new GLTFLoader();
-loader.load('/AprilTagTesting/public/FieldCAD/field.glb', (gltf) => {
+loader.load('/AprilTagTesting/field.glb', (gltf) => {
   scene.add(gltf.scene);
   gltf.scene.scale.set(0.01, 0.01, 0.01);
   gltf.scene.traverse((child) => {
@@ -27,6 +27,7 @@ loader.load('/AprilTagTesting/public/FieldCAD/field.glb', (gltf) => {
   });
   gltf.scene.rotation.set(-Math.PI / 2, -Math.PI, 0);
 });
+
 
 // Camera position
 camera.position.set(0, 2, 10);
